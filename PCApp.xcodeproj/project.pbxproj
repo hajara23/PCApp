@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		195250AC27E1272100C4D1DB /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 195250AB27E1272100C4D1DB /* Extensions.swift */; };
 		19F6CC6027DFB8AF00D7FD86 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19F6CC5F27DFB8AF00D7FD86 /* AppDelegate.swift */; };
 		19F6CC6227DFB8AF00D7FD86 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19F6CC6127DFB8AF00D7FD86 /* SceneDelegate.swift */; };
 		19F6CC6427DFB8AF00D7FD86 /* ConversationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19F6CC6327DFB8AF00D7FD86 /* ConversationsViewController.swift */; };
@@ -22,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		195250AB27E1272100C4D1DB /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		19F6CC5C27DFB8AF00D7FD86 /* PCApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PCApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		19F6CC5F27DFB8AF00D7FD86 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		19F6CC6127DFB8AF00D7FD86 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -76,7 +78,6 @@
 				19F6CC7427DFB9DF00D7FD86 /* Resources */,
 				19F6CC5F27DFB8AF00D7FD86 /* AppDelegate.swift */,
 				19F6CC6127DFB8AF00D7FD86 /* SceneDelegate.swift */,
-				19F6CC6827DFB8B000D7FD86 /* Assets.xcassets */,
 				19F6CC6D27DFB8B000D7FD86 /* Info.plist */,
 			);
 			path = PCApp;
@@ -85,6 +86,7 @@
 		19F6CC7427DFB9DF00D7FD86 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				195250AB27E1272100C4D1DB /* Extensions.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -114,8 +116,7 @@
 			isa = PBXGroup;
 			children = (
 				19F6CC6327DFB8AF00D7FD86 /* ConversationsViewController.swift */,
-				19F6CC7927DFC02400D7FD86 /* LoginViewController.swift */,
-				19F6CC7B27DFC05300D7FD86 /* RegisterViewController.swift */,
+				19F6CC8627E0495100D7FD86 /* Login */,
 				19F6CC7D27DFC07800D7FD86 /* PhotoViewerViewController.swift */,
 				19F6CC7F27DFC09100D7FD86 /* VideoPlayerViewController.swift */,
 				19F6CC8127DFC0AF00D7FD86 /* NewConversationViewController.swift */,
@@ -129,8 +130,18 @@
 			children = (
 				19F6CC6527DFB8AF00D7FD86 /* Main.storyboard */,
 				19F6CC6A27DFB8B000D7FD86 /* LaunchScreen.storyboard */,
+				19F6CC6827DFB8B000D7FD86 /* Assets.xcassets */,
 			);
 			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		19F6CC8627E0495100D7FD86 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				19F6CC7927DFC02400D7FD86 /* LoginViewController.swift */,
+				19F6CC7B27DFC05300D7FD86 /* RegisterViewController.swift */,
+			);
+			path = Login;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -209,6 +220,7 @@
 				19F6CC8227DFC0AF00D7FD86 /* NewConversationViewController.swift in Sources */,
 				19F6CC6427DFB8AF00D7FD86 /* ConversationsViewController.swift in Sources */,
 				19F6CC8027DFC09100D7FD86 /* VideoPlayerViewController.swift in Sources */,
+				195250AC27E1272100C4D1DB /* Extensions.swift in Sources */,
 				19F6CC6027DFB8AF00D7FD86 /* AppDelegate.swift in Sources */,
 				19F6CC8427DFC0DB00D7FD86 /* ProfileViewController.swift in Sources */,
 				19F6CC6227DFB8AF00D7FD86 /* SceneDelegate.swift in Sources */,
@@ -359,8 +371,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = PCApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -376,6 +390,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = hajara.PCApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -387,8 +402,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = PCApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -404,6 +421,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = hajara.PCApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

@@ -1,0 +1,6 @@
+framework module Pods_PCApp {
+  umbrella header "Pods-PCApp-umbrella.h"
+
+  export *
+  module * { export * }
+}
